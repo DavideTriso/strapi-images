@@ -1,6 +1,6 @@
-# Docker Strapi
+# Strapi Images
 
-Image to run the Strapi CMS in a containerized environment.
+Images to run the Strapi CMS in a containerized environment.
 
 ## Quick reference
 
