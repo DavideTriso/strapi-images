@@ -7,13 +7,13 @@ Images to run the Strapi CMS in a containerized environment.
 ### Build the image:
 
 ```
-docker build -t davidetriso/strapi:[tagname-dir_name] ./[tagname-dir_name]
+ docker buildx build --push --tag davidetriso/strapi:[tagname-dir_name] --output type=image --platform linux/arm64,linux/amd64 ./[tagname-dir_name]
 ```
 
 E.g.:
 
 ```
-docker build -t davidetriso/strapi:node-18.18 ./node-18.18
+docker buildx build --push --tag davidetriso/nextjs:node-18.18 --output type=image --platform linux/arm64,linux/amd64 ./node-18.18
 ```
 
 ### Push image to Docker Hub
